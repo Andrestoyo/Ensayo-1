@@ -1,0 +1,233 @@
+
+ /* Estilos generales */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+ /* Estilos header */
+
+ header{
+    background-color:white;
+}
+
+ body{
+    background-color:white;
+}
+
+.Superior{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ .izquierda{
+    width: 30%;
+    margin: 40px 0px;
+    display: flex;
+ }
+
+.Marca{
+    width: 20%;
+    height: 60%;
+    margin: auto;
+    animation-name: opacidad;
+    animation-iteration-count: initial;
+    animation-duration: 2.5s;
+    transition-duration: .3;
+}
+
+    @keyframes opacidad{ 
+
+        from{
+            opacity: 0%;;
+        }
+
+        to{
+            opacity: 100%;
+        }
+
+    }
+
+.Marca:hover{
+    transform: scale(110%);
+}
+
+.derecha{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 60px 0px;
+}
+
+.botones{
+    display: flex;
+    width: 20%;
+    font-size: 20px;
+    padding: 5px;
+    justify-content: space-evenly;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    animation-name: botones;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+    transition-duration: .3;
+}
+
+@keyframes botones{ 
+
+    from{
+        opacity: 0%;;
+    }
+
+    to{
+        opacity: 100%;
+    }
+
+}
+
+.botones:hover{
+    transform: scale(110%);
+    background-color:beige;
+}
+
+.linea{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: black;
+    animation-name: linea;
+    animation-iteration-count:initial;
+    animation-duration: 2.5s;
+}
+
+@keyframes linea {
+
+ from {
+        transform: scale(0%);
+    }
+
+  to {
+    transform: scale(100%);
+    }
+    
+}
+
+/* Estilos cuerpo */
+
+.Medio{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+ .cuerpo{
+    display: flex;
+    width: 35%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.lateral{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_2{
+    display: flex;
+    width:25%;
+    height:60%;
+    animation-name: image;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+    position:absolute; 
+    
+}
+
+.img_2:hover{
+    transform: scale(105%);
+} 
+
+@keyframes image{
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+
+} 
+
+.parrafo{
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+}
+
+@keyframes movimiento{
+    from{margin-left: 200px;}
+}
+
+/* Footer */
+
+.final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 180px;
+}
+
+.iconos{
+    width: 50px;
+    height:50px;
+    opacity: 75%;
+}
+
+.iconos:hover{
+    transform: scale(110%);
+}
+
+.gif{
+    width: 90px;
+    height: 70px;
+    opacity: .6;
+    animation-name: gif;
+    animation-iteration-count:initial;
+    animation-duration: 3s;
+}
+
+@keyframes gif{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: .6;
+    }
+}
+
+
+
+
+
+
+
+
+
